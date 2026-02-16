@@ -175,10 +175,11 @@ section h3 {
 }
     /* PRODUCT GRID */
 
-#shop {
+.product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  margin-top: 40px;
 }
 
 #shop h3 {
@@ -300,9 +301,10 @@ section h3 {
   <p>Minimal. Intentional. Designed for presence.</p>
 </div>
 <section id="shop">
+  <div class="product-grid">
   <h3>SHOP</h3>
   <p class="drop-label">DROP 001 — ESSENTIALS</p>
-<div class="product-card"
+<div class="product-card">
 <img src="images/tee.jpg.jpg" alt="VAYNT Signature Tee" class="product-image">
   <h4>VAYNT Signature Tee</h4>
 <p class="product-price">£25</p>
@@ -343,7 +345,7 @@ section h3 {
   </p>
 
 <button class="coming-soon" disabled>Pre-order opening soon</button>
-</div>
+  </div>
   <div class="email-signup">
   <p class="signup-text">
     Join the mailing list for early access to Drop 001.
