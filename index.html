@@ -167,6 +167,17 @@ section h3 {
 .hero p {
   margin-top: 12px;
 }
+    /* PRODUCT GRID */
+
+#shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+#shop h3 {
+  grid-column: 1 / -1;
+}
   </style>
 </head>
 
