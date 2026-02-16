@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VAYNT</title>
 
+  .product-card {
+  max-width: 420px;
+  border: 1px solid #eaeaea;
+  padding: 32px;
+  margin-top: 40px;
+}
+
+.product-desc {
+  color: #444;
+}
+
+.product-status {
+  margin-top: 12px;
+}
+
+.coming-soon {
+  margin-top: 16px;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+  
   <style>
     * {
       margin: 0;
@@ -112,32 +137,19 @@ section:first-of-type {
 <section id="shop">
   <h3>SHOP</h3>
 
-  <div style="margin-top: 32px;">
-    <h4>VAYNT Signature Tee</h4>
-    <p>
-      Our first essential piece. Minimal design, premium fit,
-      and intentional construction.
-    </p>
-    <p>
-      <strong>Status:</strong> Pre-order opening soon
-    </p>
+<div class="product-card">
+  <h4>VAYNT Signature Tee</h4>
 
-    <button
-      style="
-        margin-top: 16px;
-        padding: 12px 24px;
-        background: #000;
-        color: #fff;
-        border: none;
-        font-size: 14px;
-        letter-spacing: 1px;
-        cursor: pointer;
-      "
-      disabled
-    >
-      COMING SOON
-    </button>
-  </div>
+  <p class="product-desc">
+    Our first essential piece. Minimal design, premium fit, and intentional construction.
+  </p>
+
+  <p class="product-status">
+    <strong>Status:</strong> Pre-order opening soon
+  </p>
+
+  <button class="coming-soon">Coming Soon</button>
+</div>
 </section>
 <section id="about">
   <h3>ABOUT VAYNT</h3>
